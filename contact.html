@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="description" content="Northern Breath"/>
+	<title>Northern Breath</title>
+	<link rel="stylesheet" type="text/css" href="CSS/contact.css">
+  	<link rel="stylesheet" type="text/css" href="CSS/index.css">
+  </head>
+  <body>
+
+    <div class=stickHeader>
+     <table class="header">
+      <tr>
+      <th><a href="index.html"><img src="Images/NBLogo.png" alt="Northern Breath Logo" width="auto" height="50" align ="left"></a></th>
+      <th></th>
+    	<th class="header"><a href="product.html" class="button product">Product</a></th>
+    	<th class="header"><a href="pricingV2.html" class="button pricing">Pricing</a></th>
+    	<th class="header"><a href="About.html" class="button about">About Us</a></th>
+      <th class="header"><a href="contact.html" class="button contact">Contact us</a></th>
+      </tr>
+    </table>
+    </div>
+
+    <div class="stickyImg">
+    <div class="containerTxtOnPic">
+      <img class="Pub" src="Images/PubBg.jpg" width="auto" height="470px">
+      <div class="centered"><p class="titre">Contact Us</p></div>
+    </div>
+  </div>
+
+    <div class="fadeGrayToBlue">
+    <div class="container">
+      <h1>Contact Info</h1>
+      <table class="full">
+      <tr>
+        <th><p>For our adress, see map below</p></th>
+        <th>(613) 999 9999</th>
+        <th><a href="mailto:contact@northernbreath.ca">contact@northernbreath.ca</a></th>
+      </tr>
+      </table>
+    </div>
+    </div>
+
+    <div class="fadeGraytoGreen">
+    <div class="container">
+    <h1>Our LinkedIn Profiles</h1>
+    <table class="full">
+    <tr>
+      <th><img class="product" src="Images/Thierry.jpg" alt="Member 1"></th>
+      <th><img class="product" src="Images/Jacob.jpg" alt="Member 2"></th>
+      <th><img class="product" src="Images/uygar_linkedin.jpeg" alt="Member 3"></th>
+    </tr>
+    <tr>
+      <th>Thierry Laprade</th>
+      <th>Jacob Thalen</th>
+      <th>Uygar Aktuna</th>
+    </tr>
+    <tr>
+      <th><a href="https://www.linkedin.com/in/thierry-laprade/">Click here</a></th>
+      <th><a href="https://www.linkedin.com/in/jacob-thalen-844041174/">Click here</a></th>
+      <th><a href="https://www.linkedin.com/in/uygaraktuna/">Click here</a></th>
+    </tr>
+    <tr>
+      <th><img class="product" src="Images/Cameron.jpg" alt="Member 4"></th>
+      <th><img class="product" src="Images/JO.jpeg" alt="Member 5"></th>
+    </tr>
+    <tr>
+      <th>Cameron Powers</th>
+      <th>Joel Moise Motingia</th>
+    </tr>
+    <tr>
+      <th><a href="https://www.linkedin.com/in/cameron-powers-9421b0172/">Click here</a></th>
+      <th><a href="https://www.linkedin.com/in/joel-moise-motingia-195311172/">Click here</a></th>
+    </tr>
+    </table>
+    </div>
+    </div>
+
+    <div class="fadeGraytoPurple">
+    <div class="container">
+      <h1>Map</h1>
+
+    <div class="row">
+    <div class="col-3"></div>
+    <div class="col-6">
+	  <div id="map" style="width:100%;height:400px;background:gray"></div>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4t1z0z4tMNtI7_m-pQOZPyC5kb2FaRco&callback=myMap"></script>
+    <script>
+    function myMap() {
+    var mapOptions = {
+      center: new google.maps.LatLng(45.4225 -75.684),
+      zoom: 12,
+      mapTypeId: google.maps.MapTypeId.HYBRID
+    }
+    var map = new google.maps.Map(document.getElementById("map"), mapOptions);
+    }
+    </script></div>
+    <div class="col-3">
+	<div id="map"></div>
+    	<script>
+	// Initialize and add the map
+	function initMap() {
+	  // The location of Uluru
+  	var uluru = {lat: 45.4225, lng: -75.684};
+  	// The map, centered at Uluru
+  	var map = new google.maps.Map(
+  	    document.getElementById('map'), {zoom: 13, center: uluru});
+  	// The marker, positioned at Uluru
+  	var marker = new google.maps.Marker({position: uluru, map: map});
+	}
+    	</script>
+    <!--Load the API from the specified URL
+    * The async attribute allows the browser to render the page while the API loads
+    * The key parameter will contain your own API key (which is not needed for this tutorial)
+    * The callback parameter executes the initMap() function
+    -->
+    	<script async defer
+    	src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD4t1z0z4tMNtI7_m-pQOZPyC5kb2FaRco&callback=initMap">
+    	</script>
+    </div>
+    </div>
+    </div>
+    </div>
+
+  <div class="fadeGraytoOrange">
+  <div class="container">
+  <h1>Social Media</h1>
+
+  <table align="right">
+    <tr>        <!-- These have to be changed to href when i have the links-->
+      <th><img class="social" src="Images/GglPlay.png" alt="Google play"></th>
+      <th><img class="social" src="Images/AplStore.png" alt="Apple Store"></th>
+      <th><a href="https://www.facebook.com/pg/Northern-Breath-314846352636321/posts/?ref=page_internal"><img class="social" src="Images/Facebook.png" alt="Facebook"></a></th>
+      <th><img class="social" src="Images/Insta.png" alt="Instagram"></th>
+      <th><img class="social" src="Images/Twit.png" alt="Twitter"></th>
+    </tr>
+  </table>
+  <br>
+  <br>
+  <br>
+
+  </div>
+  </div>
+
+  </body>
+<html>
